@@ -395,7 +395,7 @@ Vue.use(WindUI);
 ```
 ## developer/开发者
 
-huawei shang/商华伟
+Shang HuaWei/商华伟
 
 Tianjin Fengxing science and Technology Information Engineering Co., Ltd.
 
