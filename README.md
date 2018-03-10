@@ -102,6 +102,8 @@ Vue.use(WindUI);
 ```
  * @param {value} [boolean] - 显示/关闭  支持双向绑定
  * @param {clickMaskHide} [boolean] - 点击遮罩层关闭
+ * @param {width} [String,Number] - 自定义宽度(如果用str需要加上px,或百分号)
+ * @param {height} [String,Number] - 自定义高度(如果用str需要加上px,或百分号)
  *
  * @event {on-show} 显示时触发
  * @event {on-hide} 隐藏时触发
@@ -234,8 +236,8 @@ Vue.use(WindUI);
  * @param {clickMaskHide} [Boolean] - 点击遮罩关闭
  * @param {position} [string] - 定位 可选 top,bottom,left,right
  * @param {popupStyle} [Object] - 主体窗口样式
- * @param {height} [string] - 高度, position为 top,bottom,或空 时有效(如果用str需要加上px,或百分号)
- * @param {width} [string] - 宽度, position为 left,right,或空 时有效(如果用str需要加上px,或百分号)
+ * @param {height} [string,Number] - 高度, position为 top,bottom,或空 时有效(如果用str需要加上px,或百分号)
+ * @param {width} [string,Number] - 宽度, position为 left,right,或空 时有效(如果用str需要加上px,或百分号)
  * @param {isTransparent} [Boolean] - 主体窗口透明
  * @param {maxHeight} [string] - 最大高度
  *
