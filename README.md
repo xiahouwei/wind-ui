@@ -395,6 +395,39 @@ Vue.use(WindUI);
  * @event {on-index-change} arg[val, oldVal]  img change emit(emit newIndex, oldIndex)
  * @event {on-item-click} arg[currentIndex]  img-item click emit(emit currentIndex)
 ```
+###8.picker 选择器
+```
+ * @desc picker
+ * @param {value} [Array] - picker value (two way binding)
+ * @param {data}  [Array] - picker data
+ * @param {itemHeight} [Number] - picker-item custom height (default 34)
+ * @param {rowCount} [Number] - picker-item custom count(Odd default 7)
+ * @param {columnWidthFlex} [Array] - picker-item custom width flex(last item flex could ellipsis)
+ *
+ * @Events {on-change} arg(val) - picker-item change by user(emit current change value)
+ * val[Array] val[0] picker-item-value val[1] picker-item-index
+ * @Events {on-value-change} arg(val) - picker-vale change emit(emit newValue)
+ * 
+ * @Methods {getNameValues} return currentNameArr of picker data
+ * 
+```
+###9.checkList 单选/多选
+```
+* @desc 多选及单选
+ * @param {value} [Array] - 绑定值，支持双向绑定
+ * @param {options}  [Array] - 选项参数 每个参数可以是string类型,也可以是obj类型
+ * @options {value}  选项的值,对应参数value
+ * @options {name}  选项显示的文本
+ * @options {label}  [boolean] 选项显示的下标文字
+ * @options {disabled}  选项是否禁用控件
+ * @param {max} [Number] - 最大可选, max=1 开启raido模式
+ * @param {min} [Number] - 最少必选
+ * @param {align} [String] - 选项控件位置 right,left
+ *
+ * @event {on-change} 选项发生改变触发
+ *
+ * @methods {getCheckedOptions} 获取选中的选项的name和value
+```
 ## developer/开发者
 
 Shang HuaWei/商华伟
