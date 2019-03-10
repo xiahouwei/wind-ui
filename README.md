@@ -25,12 +25,12 @@ import WindUI from 'wind-ui';
 Vue.use(WindUI);
 ```
 
-##组件
+## 组件
 
 
-####弹窗组件
+#### 弹窗组件
 
-####1.Loading 加载
+#### 1.Loading 加载
 ```
  * @param {text} [str] - 显示在下方的文本信息
  * @param {loadingType}  [str] - loading动画样式
@@ -56,7 +56,7 @@ Vue.use(WindUI);
  *   loadingType:'flower'
  * })
 ```
-####2.LoadingType 加载动画
+#### 2.LoadingType 加载动画
 ```
  * @desc Loading加载动画
  * @param {type} [str] - 动画类型
@@ -70,7 +70,7 @@ Vue.use(WindUI);
  * <w-loadingType size="60"></w-loadingType>
  *
 ```
-####3.Toast 提示框
+#### 3.Toast 提示框
 ```
  * @param {message} [str] - 显示在下方的文本信息
  * @param {duration}  [nub] - 提示框显示时间
@@ -98,7 +98,7 @@ Vue.use(WindUI);
  *   type: 'warning',
  * })
 ```
-####4.Dialog显示
+#### 4.Dialog显示
 ```
  * @param {value} [boolean] - 显示/关闭  支持双向绑定
  * @param {clickMaskHide} [boolean] - 点击遮罩层关闭
@@ -113,7 +113,7 @@ Vue.use(WindUI);
  * <w-dialog v-model="show"></w-dialog>
 ```
 
-####5.confirm提示框
+#### 5.confirm提示框
 ```
  * @param {value} [str] - 是否显示,用 v-model 绑定
  * @param {title}  [str] - 提示标题
@@ -155,7 +155,7 @@ Vue.use(WindUI);
  * })
 ```
 
-####6.alert提示框
+#### 6.alert提示框
 ```
  * @param {value} [str] - 是否显示,用 v-model 绑定
  * @param {title}  [str] - 提示标题
@@ -190,7 +190,7 @@ Vue.use(WindUI);
  *   this.switchValue13 = false
  * })
 ```
-####7.actionSheet提示框
+#### 7.actionSheet提示框
 ```
  * @desc actionSheet 提示框
  * @param {value} [boolean] - 显示/关闭  支持双向绑定
@@ -229,7 +229,7 @@ Vue.use(WindUI);
         }
     ]
 ```
-####8.popup 弹出框
+#### 8.popup 弹出框
 ```
  * @param {value} [boolean] - 显示/关闭  支持双向绑定
  * @param {showMask} [boolean] - 显示/关闭  遮罩
@@ -250,9 +250,9 @@ Vue.use(WindUI);
  * <div>显示文本</div>
  * </w-popup>
  ```
-####表单组件
+#### 表单组件
 
-####1.Switch 开关
+#### 1.Switch 开关
 ```
  * @desc 切换按钮
  * @param {value} [boolean] - 绑定值，支持双向绑定
@@ -265,7 +265,7 @@ Vue.use(WindUI);
  * 2.如有权限需求 绑定 disabled 即可
  * 3.需要根据开启/关闭 执行函数 绑定change 即可
  ```
-###2.Button 按钮
+### 2.Button 按钮
 ```
  * @param {type} [str] - 按钮样式类型 默认default 可选[default,primary,warn]
  * @param {disabled}  [boolean] - 禁用
@@ -282,7 +282,7 @@ Vue.use(WindUI);
  *  <w-button type='primary' :disabled="false" :plain="false" :mini="false" :showLoading="false" @click='buttonClick'>确定</w-button>
  *  <w-button type='warn' :disabled="false" :plain="true" :mini="true">取消</w-button>
 ```
-###3.Tabbar 底部切换标签
+### 3.Tabbar 底部切换标签
 ```
  * @desc 底部tabbar标签
  * @param {value} [Number] - 选中的子元素
@@ -317,7 +317,7 @@ Vue.use(WindUI);
     </w-tabbar-item>
   </w-tabbar>
 ```
-###4.Header 顶部标题栏
+### 4.Header 顶部标题栏
 ```
  * @param {title}  [String] - 标题文本
  * @param {transitionName}  [String] - 切换路由页面动画效果名称
@@ -346,7 +346,7 @@ Vue.use(WindUI);
         showMore: true
     }
 ```
-###5.Cell 单元格
+### 5.Cell 单元格
 ```
  * @param {title}  [String] - 标题文本
  * @param {label}  [String] - 标题备注信息
@@ -364,7 +364,7 @@ Vue.use(WindUI);
   </w-cell>
  */
 ```
-###6.Index-list 索引列表
+### 6.Index-list 索引列表
 ```
  * @desc index-list : cell group of index
  * @param {height} [Number] - custom height (cover bottom,haveTabbar)
@@ -376,7 +376,7 @@ Vue.use(WindUI);
  * @desc index-list-item 标签选项
  * @param {index} [String] - index(must)
 ```
-###7.swipe 轮播图
+### 7.swipe 轮播图
 ```
  * @desc swipe : loop image
  * @param {height} [Number] - custom height (default 100%)自定义高度
@@ -395,7 +395,7 @@ Vue.use(WindUI);
  * @event {on-index-change} arg[val, oldVal]  img change emit(emit newIndex, oldIndex)
  * @event {on-item-click} arg[currentIndex]  img-item click emit(emit currentIndex)
 ```
-###8.picker 选择器
+### 8.picker 选择器
 ```
  * @desc picker
  * @param {value} [Array] - picker value (two way binding)
@@ -411,7 +411,7 @@ Vue.use(WindUI);
  * @Methods {getNameValues} return currentNameArr of picker data
  * 
 ```
-###9.checkList 单选/多选
+### 9.checkList 单选/多选
 ```
 * @desc 多选及单选
  * @param {value} [Array] - 绑定值，支持双向绑定
