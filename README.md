@@ -432,7 +432,7 @@ Vue.use(WindUI);
 
 Shang HuaWei/商华伟
 
-Tianjin Fengxing science and Technology Information Engineering Co., Ltd.
+Tianjin Fengxing science and Technology Information Engineering Co., Ltd
 
 天津市风行科技信息工程有限公司
 
